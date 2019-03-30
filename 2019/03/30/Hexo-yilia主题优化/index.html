@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/3 | Robin&#39;s Blog</title>
+  <title>Hexo yilia主题优化 | Robin&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Robin&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2019/03/index.html">
+  <meta name="description" content="Hexo yilia主题优化 文章如何显示摘要点击主页时，发现所有文章都是全文显示，不利于查找，可控制显示的字数解决办法。 在你 MD 格式文章正文插入">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo yilia主题优化">
+<meta property="og:url" content="http://yoursite.com/2019/03/30/Hexo-yilia主题优化/index.html">
 <meta property="og:site_name" content="Robin&#39;s Blog">
+<meta property="og:description" content="Hexo yilia主题优化 文章如何显示摘要点击主页时，发现所有文章都是全文显示，不利于查找，可控制显示的字数解决办法。 在你 MD 格式文章正文插入">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tKfTcgy1g1l9k1yis1j31ie0q6n13.jpg">
+<meta property="og:updated_time" content="2019-03-30T16:08:23.769Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Robin&#39;s Blog">
+<meta name="twitter:title" content="Hexo yilia主题优化">
+<meta name="twitter:description" content="Hexo yilia主题优化 文章如何显示摘要点击主页时，发现所有文章都是全文显示，不利于查找，可控制显示的字数解决办法。 在你 MD 格式文章正文插入">
+<meta name="twitter:image" content="https://ws3.sinaimg.cn/large/006tKfTcgy1g1l9k1yis1j31ie0q6n13.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Robin&#39;s Blog" type="application/atom+xml">
   
@@ -136,36 +143,53 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Hexo-yilia主题优化" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/30/Hexo-yilia主题优化/" class="archive-article-date">
-  	<time datetime="2019-03-30T15:13:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-30</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/30/Hexo-yilia主题优化/">Hexo yilia主题优化</a>
+    <h1 class="article-title" itemprop="name">
+      Hexo yilia主题优化
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/03/30/Hexo-yilia主题优化/" class="archive-article-date">
+  	<time datetime="2019-03-30T15:13:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><em>Hexo yilia主题优化</em></p>
+<h2 id="文章如何显示摘要"><a href="#文章如何显示摘要" class="headerlink" title="文章如何显示摘要"></a>文章如何显示摘要</h2><p>点击主页时，发现所有文章都是全文显示，不利于查找，可控制显示的字数<br>解决办法。 在你 MD 格式文章正文插入 <a id="more"></a>即可，只会显示它之前的，此后的就不显示，点击文章标题，全文阅读才可看到，同时注释掉以下 themes/yilia/_config.yml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># excerpt_link: more</span><br></pre></td></tr></table></figure>
+<!-- more -->
+<h2 id="配置图片资源添加图片资源文件夹"><a href="#配置图片资源添加图片资源文件夹" class="headerlink" title="配置图片资源添加图片资源文件夹"></a>配置图片资源添加图片资源文件夹</h2><ul>
+<li>路径为themes/yilia/source/下，可添加一个assets文件夹，里面存放图片资源即可，或直接使用source下已有的img文件夹，这里使用现有文件夹。</li>
+<li>配置文件中直接引用即可。路径为themes/yilia/_config.yml，将需要引用的文件添加上路径即可<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">favicon: /img/favicon.png</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="文章显示目录增加文章目录-TOC-table-of-content-，方便阅读文章"><a href="#文章显示目录增加文章目录-TOC-table-of-content-，方便阅读文章" class="headerlink" title="文章显示目录增加文章目录 TOC(table of content )，方便阅读文章"></a>文章显示目录增加文章目录 TOC(table of content )，方便阅读文章</h2><p>在themes/yilia/_config.ym中进行配置toc: 2即可，它会将你 Markdown 语法的标题，生成目录，目录查看在右下角。</p>
+<h2 id="网站增加访问计数"><a href="#网站增加访问计数" class="headerlink" title="网站增加访问计数"></a>网站增加访问计数</h2><p><a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">不蒜子</a>官网</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 必选</span><br><span class="line">&lt;script async src=&quot; //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">#标签，计数角度不同</span><br><span class="line">&lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;本站总访问量&lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt;次&lt;/span&gt;</span><br><span class="line">&lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;</span><br><span class="line">本站访客数&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt;人次</span><br><span class="line">&lt;/span&gt;</span><br></pre></td></tr></table></figure>
+<p>如果你是用的hexo，打开<em>/themes/你的主题/layout/_partial/footer.ejs/</em>添加如下脚本，保存后hexo d -g<br><img src="https://ws3.sinaimg.cn/large/006tKfTcgy1g1l9k1yis1j31ie0q6n13.jpg" alt></p>
+<h2 id="解决”所有文章”功能显示加载失败的方法"><a href="#解决”所有文章”功能显示加载失败的方法" class="headerlink" title="解决”所有文章”功能显示加载失败的方法"></a>解决”所有文章”功能显示加载失败的方法</h2><p>在使用提示中的命令<code>npm i hexo-generator-json-content —save</code>后，会出现<code>npm ERR! Unexpected end of JSON input while parsing near &#39;...t&quot;:{&quot;shasum&quot;:&quot;6868da1&#39;</code>的错误提示，可以尝试使用<code>npm cache clean --force</code>命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-generator-json-content --save</span><br><span class="line">npm ERR! Unexpected end of JSON input while parsing near &apos;...t&quot;:&#123;&quot;shasum&quot;:&quot;6868da1&apos;</span><br><span class="line"></span><br><span class="line">npm ERR! A complete log of this run can be found in:</span><br><span class="line">npm ERR!     /Users/robin/.npm/_logs/2019-03-30T08_01_28_243Z-debug.log</span><br><span class="line"></span><br><span class="line"># 当执行报错时，使用npm cache clean --force命令</span><br><span class="line">npm cache clean --force</span><br><span class="line">npm WARN using --force I sure hope you know what you are doing.</span><br><span class="line"></span><br><span class="line"># 再执行 npm install命令，npm i hexo-generator-json-content --save命令</span><br><span class="line">npm install</span><br><span class="line">npm WARN babel-eslint@10.0.1 requires a peer of eslint@&gt;= 4.12.1 but none is installed. You must install peer dependencies yourself.</span><br><span class="line"></span><br><span class="line">audited 6951 packages in 5.398s</span><br><span class="line">found 2 low severity vulnerabilities</span><br><span class="line">  run `npm audit fix` to fix them, or `npm audit` for details</span><br><span class="line"></span><br><span class="line">npm audit fix</span><br><span class="line">npm WARN babel-eslint@10.0.1 requires a peer of eslint@&gt;= 4.12.1 but none is installed. You must install peer dependencies yourself.</span><br><span class="line"></span><br><span class="line">up to date in 1.724s</span><br><span class="line">fixed 0 of 2 vulnerabilities in 6951 scanned packages</span><br><span class="line">  2 vulnerabilities required manual review and could not be updated</span><br></pre></td></tr></table></figure>
+      
+
+
+
+  <div class="declare" hidden="hidden"></div>
+
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -177,84 +201,119 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/03/30/Hexo-yilia主题优化/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/29/Mac平台Appium自动化环境搭建指南/" class="archive-article-date">
-  	<time datetime="2019-03-29T14:07:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-29</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/03/29/Mac平台Appium自动化环境搭建指南/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Mac平台Appium自动化环境搭建指南</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/29/Mac平台Appium自动化环境搭建指南/">Mac平台Appium自动化环境搭建指南</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">自动化</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#文章如何显示摘要"><span class="toc-number">1.</span> <span class="toc-text">文章如何显示摘要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置图片资源添加图片资源文件夹"><span class="toc-number">2.</span> <span class="toc-text">配置图片资源添加图片资源文件夹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文章显示目录增加文章目录-TOC-table-of-content-，方便阅读文章"><span class="toc-number">3.</span> <span class="toc-text">文章显示目录增加文章目录 TOC(table of content )，方便阅读文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#网站增加访问计数"><span class="toc-number">4.</span> <span class="toc-text">网站增加访问计数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解决”所有文章”功能显示加载失败的方法"><span class="toc-number">5.</span> <span class="toc-text">解决”所有文章”功能显示加载失败的方法</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/29/我的博客/" class="archive-article-date">
-  	<time datetime="2019-03-28T16:07:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-29</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/29/我的博客/">我的博客</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -281,8 +340,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
